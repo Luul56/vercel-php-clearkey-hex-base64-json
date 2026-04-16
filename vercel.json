@@ -4,9 +4,9 @@
       "runtime": "vercel-php@0.9.0"
     }
   },
-  "routes": [
-    { "src": "/api/results", "dest": "/api/results.php" },
-    { "src": "/api/multiple_key", "dest": "/api/multiple_key.php" },
-    { "src": "/(.*)", "dest": "/index.php" }
+  "rewrites": [
+    { "source": "/api/results.php", "destination": "/api/results.php" },
+    { "source": "/api/multiple_key.php", "destination": "/api/multiple_key.php" },
+    { "source": "/(.*)", "destination": "/index.php" }
   ]
 }
