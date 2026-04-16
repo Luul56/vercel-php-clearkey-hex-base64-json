@@ -5,6 +5,8 @@
     }
   },
   "routes": [
+    { "src": "/api/results", "dest": "/api/results.php" },
+    { "src": "/api/multiple_key", "dest": "/api/multiple_key.php" },
     { "src": "/(.*)", "dest": "/index.php" }
   ]
 }
